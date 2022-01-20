@@ -2,6 +2,7 @@ import React from "react";
 import Box from '@mui/material/Box';
 import { Modal } from "@mui/material";
 import { Imagem, Number, Name, Stats, Button } from "../Body";
+import './style.css'
 
 const style = {
     position: 'absolute',
@@ -44,11 +45,40 @@ export default function BasicModal(props){
                         <Number style={{color: "blue"}}>Nº 0{pokemon.id}</Number>
                         <Name>{pokemon.name}</Name>
 
-                        {pokemon.stats.map(({stat}) => (
-                            <Stats>
-                                {stat.name}
-                            </Stats>
-                        ))}
+                    <table className="statsPrincipal">
+                        <thead>
+                            <tr>
+                                <td>peso:  </td>
+                                <td>altura:</td>
+                                <td>XP Base:</td>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>{pokemon.weight}</td>
+                                <td>{pokemon.height}</td>
+                                <td>{pokemon.base_experience}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <h6 className="title">Status</h6>
+                        <table className="Stats">
+                            <thead>
+                                <tr>
+                                    {pokemon.stats.map(({stat, base_stat}) => (
+                                        <Stats>
+                                            {stat.name} : {base_stat}
+                                        </Stats>
+                                    ))}
+                                </tr>
+                            </thead>
+                        </table>
+
+                    <div style={{background: 'white'}}>
+                       
+                    </div>
                     </Box>
                 </Modal>
         </div>

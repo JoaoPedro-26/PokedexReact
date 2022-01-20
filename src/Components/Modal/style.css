@@ -1,0 +1,32 @@
+table{
+    border-collapse: separate;
+    border-spacing: 10px;
+    *border-collapse: expression('separate', cellSpacing='10px');
+    background: white;
+    margin-left: 190px;
+}
+
+.title{
+    font-weight: bold;
+    margin: 25px 12px;
+    font-size: 22px;
+    background: white;
+}
+
+table tr{
+    font-family: 'Nunito', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    text-align: center;
+    background: white;
+}
+
+.statsPrincipal td{
+    margin: 12px 12px 12px 12px;
+    padding: 8px;
+    background: white;
+}
+
+.Stats {
+    margin-left: 210px;
+}

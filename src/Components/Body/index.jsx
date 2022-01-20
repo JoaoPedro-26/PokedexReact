@@ -46,13 +46,13 @@ export const Number = styled.p`
 `;
 
 export const Name = styled.p`
-    font-size: 1,375rem;
+    font-size: 1,5rem;
     font-weight: bold;
     background-color: white;
 `;
 
 export const Type = styled.p`
-    font-size: 1rem;
+    font-size: 1,725rem;
     font-weight: bold;
     background-color: white;
     justify-content: space-between;
