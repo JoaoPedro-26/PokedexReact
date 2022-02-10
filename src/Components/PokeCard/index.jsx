@@ -5,8 +5,7 @@ import Favorite from "../../assets/imgs/Favorite.png"
 import Pokecolors from "../PokeColors";
 import BasicModal from "../Modal";
 
-
-export const PokeCard =(props) => {
+export default function PokeCard (props) {
     const [pokemon, setPokemon] = useState();
 
     const [modalVisible, setmodalVisible] = useState(false);
@@ -25,6 +24,7 @@ export const PokeCard =(props) => {
 
     return (
         <>
+        
             <Infocard>
                 <BasicModal pokemon={pokemon}/>
                 <Favorito src={Favorite}/>

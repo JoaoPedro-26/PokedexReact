@@ -3,10 +3,8 @@ import './App.css';
 import api, { Busca } from './api';
 import Titulo from "./Components/Titulo";
 import { GlobalStyle } from './Components/GlobalStyle';
-import { PokeCard } from './Components/PokeCard';
 import Infocard from './Components/Cards';
-
-const LIMIT = 9;
+import ListaPokemons from './Components/Paginacao'
 
 export default function App() {
 
@@ -30,11 +28,9 @@ export default function App() {
 
             <Infocard>
                
-               {pokemons.results?.map((pokemon) => (
-                 <PokeCard name={pokemon.name} key={pokemon.name}/>
-               ))}
+              <ListaPokemons/>
                
-          </Infocard>
+            </Infocard>
 
       </div>
 

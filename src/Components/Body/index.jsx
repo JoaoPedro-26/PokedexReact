@@ -10,7 +10,6 @@ export const Infocard = styled.div`
     vertical-align: middle;
     align-items: center;
     justify-content: center;
-
     &:hover{
         box-shadow: 0 0 5px #FF0000;
         transform: translate(0, -6px) rotate(2deg)

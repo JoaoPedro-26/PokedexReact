@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import pokedex from "../../assets/imgs/pokedex.png"
+import pokedex from "../../assets/imgs/pokedex.png";
 
 const StyledHeader = styled.div`
     margin: 0 auto;
@@ -39,7 +39,7 @@ const Cadastro = styled.input`
     height: 20px;
     font-size: 18px;
     text-align: center;
-`
+`;
 
 export default () => {
     return (
@@ -48,6 +48,8 @@ export default () => {
             <Search placeholder="Pesquina nome do Pokemon ou Nº"/>
             <Filter placeholder="Filtrar pelo tipo"/>
             <Cadastro placeholder="Login/Cadastro"/>
+
+            
         </StyledHeader>
     );
   };
