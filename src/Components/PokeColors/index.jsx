@@ -1,4 +1,3 @@
-import styled from "styled-components";
 //corespokemon
 const Pokecolors = {
     bug: '#3B9950',

@@ -8,8 +8,6 @@ import BasicModal from "../Modal";
 export default function PokeCard (props) {
     const [pokemon, setPokemon] = useState();
 
-    const [modalVisible, setmodalVisible] = useState(false);
-
     useEffect(() => {
         Busca(props.name, setPokemon)
     })
