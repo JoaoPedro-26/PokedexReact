@@ -37,8 +37,6 @@ export default function BasicModal(props){
                 <Modal
                 open={open}
                 onClose={handleClose}
-                aria-labelledby="modal-modal-title"
-                aria-descrebedby="modal-modal-description"
                 >
                     <Box sx={style}>
                         <Imagem src={pokemon.sprites.other.dream_world.front_default} alt={pokemon.name}/>
