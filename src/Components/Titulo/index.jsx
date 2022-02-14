@@ -12,6 +12,7 @@ border: 2px solid #C5D7DD;
 border-radius: 4px;
 height: 20px;
 width: 400px;
+display: none;
 `;
 
 const Filter = styled.input`
@@ -25,6 +26,7 @@ const Filter = styled.input`
     height: 20px;
     font-size: 18px;
     text-align: center;
+    display: none;
 `;
 
 const Pokedex = styled.img`
@@ -39,6 +41,7 @@ const Cadastro = styled.input`
     height: 20px;
     font-size: 18px;
     text-align: center;
+    display: none;
 `;
 
 export default () => {

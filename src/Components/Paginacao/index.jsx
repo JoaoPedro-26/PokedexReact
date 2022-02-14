@@ -29,20 +29,18 @@ function ListaPokemons(){
   }
     return(
     <>
-      <div className="Button">
-        <Button variant="outlined" onClick={() => requestPokemon(previous)}>Anterior</Button>
-        <Button variant="outlined" onClick={() => requestPokemon(next)}>Proximo</Button>
-      </div>
-
-      
           {pokemon.map((e, index) => (
-            <div className="Vapo" key={index}>
+            <div key={index}>
                 <PokeCard name={e.name} />
             </div>
           ))}
+
+          <div className="Button">
+            <Button variant="outlined" onClick={() => requestPokemon(previous)}>Anterior</Button>
+            <Button variant="outlined" onClick={() => requestPokemon(next)}>Proximo</Button>
+          </div>
     </>
-    );
-  
+  ); 
 }
 
 export default ListaPokemons;

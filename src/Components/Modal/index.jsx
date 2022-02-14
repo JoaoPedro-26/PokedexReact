@@ -32,11 +32,10 @@ export default function BasicModal(props){
     }
 
     return (
-        <div style={{backgroundColor: "white"}}>
+        <div className="Modal">
             <Button variant="primary" onClick={handleOpen}>Informações do Pokemon</Button>
                 <Modal
                 open={open}
-                onClose={handleClose}
                 >
                     <Box sx={style}>
                         <Imagem src={pokemon.sprites.other.dream_world.front_default} alt={pokemon.name}/>
@@ -74,9 +73,7 @@ export default function BasicModal(props){
                             </thead>
                         </table>
 
-                    <div style={{background: 'white'}}>
-                       
-                    </div>
+                        <Button className="ButtonModal" onClick={handleClose}>Close</Button>
                     </Box>
                 </Modal>
         </div>
