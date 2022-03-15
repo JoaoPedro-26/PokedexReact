@@ -14,6 +14,8 @@ export const Infocard = styled.div`
         box-shadow: 0 0 5px #FF0000;
         transform: translate(0, -6px) rotate(2deg)
     }
+
+    
 `;
 
 export const InfocardModal = styled.div`

@@ -5,3 +5,21 @@
     display: flex;
     justify-content: space-between;
 }
+
+@media screen and (max-width: 480px) {
+    .Button {
+        margin-left: 0px;
+    }         
+}
+
+@media screen and (max-width: 780px) {
+    .Button {
+        margin-left: 150px;
+    }         
+}
+
+@media screen and (max-width: 1024px) {
+    .Button {
+        margin-left: 310px;
+    }
+}
